@@ -1,14 +1,15 @@
 import './App.css'
-import Profile from './components/Profile'
-// import { people } from './ambassadors'
-function App() {
-  // const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <Profile />
-    </>
-  )
+import SearchPage from './pages/SearchPage';
+import {Routes, Route} from 'react-router-dom'
+
+function App() {
+  return(
+    <Routes>
+      <Route path="/Search" element={<SearchPage />} />
+      <Route path="/Search/:id" element={<Profile />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
