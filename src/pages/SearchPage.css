@@ -1,0 +1,56 @@
+/* Driver Card Component Stylings */
+
+* {
+    /* outline: 1px solid red; */
+}
+
+.dropdown-component {
+    display: flex;
+    justify-content: space-between;
+}
+
+.driver-card-container {
+    display: grid;
+    row-gap: 0.75rem;
+}
+
+.image-name-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.image-container {
+    margin-right: 0.5rem;
+    margin-bottom: s 0.5rem;
+}
+
+.name-container {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.side-container {
+    display: grid;
+    align-content: center;
+}
+
+.bookmark-tag {
+    font-size: 1.5rem;
+    justify-self: flex-end;
+}
+
+.heart-icon {
+    font-size: 1.5rem;
+}
+
+.cost-rating-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.price,
+.ratings {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
