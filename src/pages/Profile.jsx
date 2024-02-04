@@ -9,7 +9,7 @@ import {
 import { Label } from "@/components/ui/label";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { CheckIcon } from "@radix-ui/react-icons";
-import { CA } from "country-flag-icons/react/3x2";
+import Flags from "country-flag-icons/react/3x2";
 import { Link, useParams } from "react-router-dom";
 // import {people} from '../ambassadors'
 import data from "../data";
@@ -21,12 +21,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Star from "../components/Star";
 
 const Profile = () => {
   // if (people.id==id)
 
   const { id } = useParams();
   const [person, setPerson] = useState(null);
+  
 
   useEffect(() => {
     // Filter the data array to find the person with the matching id
@@ -34,8 +36,25 @@ const Profile = () => {
     const selectedPerson = data.find((person) => person.id === parseInt(id));
     console.log("selectedPerson = ", selectedPerson);
     setPerson(selectedPerson);
-  }, [id]); // Re-run effect whenever id changes
 
+  }, [id]); // Re-run effect whenever id changes
+    
+  
+
+  const StarRating = ({rating}) => {
+    return (
+      <span className="flex">
+        {Array(rating)
+          .fill()
+          .map((_, index) => (
+            <Star 
+             key={index} 
+             filled={true} />
+          ))}
+      </span>
+    );
+  };
+  
   if (!person) {
     return <div>Loading...</div>; // Or any loading indicator you prefer
   } else {
@@ -72,60 +91,74 @@ const Profile = () => {
                 {person.aboutMe.substring(0, 200) + "..."}
               </div>
             </div>
-          </CardContent>
-          <Carousel
-            opts={{
-              align: "start",
-            }}
-            className="w-full max-w-sm"
-          >
-            <CarouselContent>
-              {person.reviewData.map((review, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-3">
-                        <span className="text-3xl font-semibold">
-                          {index + 1}
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+    
+            <div className="block text-center py-5">
+              <div className="w-[80px] mx-auto">
+                <StarRating  rating={person.ratings}/>
+              </div>
+              <div className="block text-md font-bold py-2">
+                STAR RATINGS
+              </div>
+            </div>
+            <Carousel opts={{align: "start",}} className="w-[260px] mx-auto">
+                <CarouselContent>
+                  {person.reviewData.map((review, index) => {
+                    const flagNation = review.flagNation
+                    const Flag = Flags[flagNation];
+                    return (
+                      <>
+                      <CarouselItem key={index} >
+                        <div className="p-1">
+                          <Card className="w-[240px] mx-auto ">
+                            <CardContent className="flex aspect-square items-center justify-center p-3">
+                              <div className="block">
+                                <div className="grid grid-cols-2">
+                                  <Avatar className="block w-14 h-14 align-bottom mx-auto">
+                                    <AvatarImage
+                                      src={review.img}
+                                      alt=""
+                                      className="object-cover"
+                                    />
+                                  </Avatar>
+                                  <div className="block">
+                                    <div className="flex">
+                                      <Label
+                                          htmlFor="name"
+                                          className="text-lg text-left"
+                                        >
+                                          {review.reviewerName}
+                                      </Label>
+                                    
+                                      <Flag className="flex text-left mx-4 py-2 w-8 h-8" htmlFor="name"></Flag>
+                                    </div>
+                                    <div className="block text-xs my">
+                                      {review.timeReviewWasAdded} weeks ago
+                                    </div>
+                                  </div>
+                                </div>
+                                    
+                                <div className="block text-xs my-4 ">  
+                                  <div className="flex text-xs ">
+                                    <StarRating  rating={review.stars} />
+                                  </div>
+                                  <div className="block text-xs ">
+                                    {review.reviewContent.substring(0, 150) + "..."}
+                                  </div>
+                                </div>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+                      </>
+                    )}
+                  )};
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+            </Carousel>
+          </CardContent>          
         </Card>
-
-        {/* <Card className="w-[350px]">
-                <CardHeader>
-                </CardHeader>
-                <CardContent>
-                <form>  
-                    <div className="grid grid-cols-4">
-                        <Avatar className="flex w-14 h-14 align-bottom">
-                        <AvatarImage src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg" alt="" />
-                        </Avatar>
-                        <div className='block col-span-3'>
-                            <div className='grid grid-cols-3 text-left items-center py-2'>
-                                <Label htmlFor="name" className="text-lg text-left col-span-2">Denise Menice</Label>
-                                <CheckIcon className='h-4 w-4' />
-                            </div>
-                            <div className='grid grid-cols-3 text-left'>
-                                <Label className="block text-left col-span-2" htmlFor="name">Country of Birth: Canada</Label>
-                                <CA title="Canada"className="h-4 w-4" />
-                            </div>
-                        </div>  
-                    </div>
-                </form>
-                </CardContent>
-                <CardFooter className="flex justify-between">
-                    <Button variant="outline">Cancel</Button>
-                    <Button>Deploy</Button>
-                </CardFooter>
-            </Card> */}
       </>
     );
   }
