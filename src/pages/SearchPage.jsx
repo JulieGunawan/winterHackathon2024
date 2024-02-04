@@ -4,6 +4,7 @@ import { CiBookmark } from "react-icons/ci";
 import { IoIosStarOutline } from "react-icons/io";
 import './SearchPage.css';
 import data from '../data';
+import {Link} from 'react-router-dom';
 
 export default function SearchPage() {
     const [selectedLanguage, changeSelectedLanguage] = useState('eng');
@@ -57,29 +58,31 @@ export default function SearchPage() {
                 {dataToUse.map(d => {
                     return (
                         <div id="driver-card" key={d.id}>
-                            <div id="image-name-container" className="image-name-container">
-                                <div className="image-container"><img src={d.img} alt="" /></div>
-                                <div className="side-container">
-                                    <div className="name-container">
-                                        <h2>{d.name}</h2>
-                                        <CiBookmark className="bookmark-tag" />
-                                        <CiHeart className="heart-icon" />
-                                    </div>
-                                    <div className="cost-rating-container">
-                                        <div>
-                                            <span className="price">${d.price}</span>
-                                            <p className="duration">{d.tourDuration} minutes</p>
+                            <Link className="list-item" to={`/drivers/${d.id}`}>
+                                <div id="image-name-container" className="image-name-container">
+                                    <div className="image-container"><img src={d.img} alt="" /></div>
+                                    <div className="side-container">
+                                        <div className="name-container">
+                                            <h2>{d.name}</h2>
+                                            <CiBookmark className="bookmark-tag" />
+                                            <CiHeart className="heart-icon" />
                                         </div>
-                                        <div>
-                                            <div className="ratings"><IoIosStarOutline className="star-icon" /> {d.ratings}</div>
-                                            <div className="reviews">{d.reviews} reviews</div>
+                                        <div className="cost-rating-container">
+                                            <div>
+                                                <span className="price">${d.price}</span>
+                                                <p className="duration">{d.tourDuration} minutes</p>
+                                            </div>
+                                            <div>
+                                                <div className="ratings"><IoIosStarOutline className="star-icon" /> {d.ratings}</div>
+                                                <div className="reviews">{d.reviews} reviews</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <p className="driver-info">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis pariatur natus, reprehenderit voluptas praesentium laboriosam mollitia facilis quo eos quia ab? Esse cumque ad ipsam magni perferendis voluptatibus impedit officiis?
-                            </p>
+                                <p className="driver-info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis pariatur natus, reprehenderit voluptas praesentium laboriosam mollitia facilis quo eos quia ab? Esse cumque ad ipsam magni perferendis voluptatibus impedit officiis?
+                                </p>
+                            </Link>
                         </div>
                     );
                 })}
