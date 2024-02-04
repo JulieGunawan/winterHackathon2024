@@ -11,6 +11,27 @@ const data = [
         "lang": "eng",
         "reviews": 59,
         "aboutMe": "I am passionate about sharing Canada's rich cultural heritage with visitors from around the world. With fluency in English and French, I offer engaging tours that explore the history, architecture, and natural beauty of Canada."
+        , "reviewData": [
+            {
+                "reviewId": 1,
+                "reviewerName": "Ravi",
+                "timeReviewWasAdded": 3,
+                "stars": 3,
+                "reviewContent": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+            }, {
+                "reviewId": 2,
+                "reviewerName": "Xavier",
+                "timeReviewWasAdded": 1,
+                "stars": 2,
+                "reviewContent": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+            }, {
+                "reviewId": 3,
+                "reviewerName": "Stacee",
+                "timeReviewWasAdded": 1,
+                "stars": 5,
+                "reviewContent": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+            }
+        ]
     }, {
         "id": 2,
         "img": "https://res.cloudinary.com/diqqf3eq2/image/upload/ar_1:1,bo_5px_solid_rgb:ff0000,c_fill,g_auto,r_max,w_1000/v1595959121/person-1_aufeoq.jpg",
@@ -23,6 +44,27 @@ const data = [
         "lang": "eng",
         "reviews": 35,
         "aboutMe": "As a seasoned tour guide based in the United States, I specialize in crafting immersive experiences that showcase the diverse landscapes, cultures, and cuisines of America. Fluent in both English and Spanish, I aim to provide memorable adventures for travelers."
+        , "reviewData": [
+            {
+                "reviewId": 1,
+                "reviewerName": "Ravi",
+                "timeReviewWasAdded": 3,
+                "stars": 3,
+                "reviewContent": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+            }, {
+                "reviewId": 2,
+                "reviewerName": "Xavier",
+                "timeReviewWasAdded": 1,
+                "stars": 2,
+                "reviewContent": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+            }, {
+                "reviewId": 3,
+                "reviewerName": "Stacee",
+                "timeReviewWasAdded": 1,
+                "stars": 5,
+                "reviewContent": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+            }
+        ]
     }, {
         "id": 3,
         "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg",
@@ -36,6 +78,27 @@ const data = [
         "reviews": 30,
         "aboutMe": "I am passionate about sharing Canada's rich cultural heritage with visitors from around the world. With fluency in English and French, I offer engaging tours that explore the history, architecture, and natural beauty of Canada."
 
+        , "reviewData": [
+            {
+                "reviewId": 1,
+                "reviewerName": "Ravi",
+                "timeReviewWasAdded": 3,
+                "stars": 3,
+                "reviewContent": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+            }, {
+                "reviewId": 2,
+                "reviewerName": "Xavier",
+                "timeReviewWasAdded": 1,
+                "stars": 2,
+                "reviewContent": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+            }, {
+                "reviewId": 3,
+                "reviewerName": "Stacee",
+                "timeReviewWasAdded": 1,
+                "stars": 5,
+                "reviewContent": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+            }
+        ]
     }, {
         "id": 4,
         "img": "https://images.pexels.com/photos/914472/pexels-photo-914472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -49,6 +112,27 @@ const data = [
         "reviews": 11,
         "aboutMe": "As a seasoned tour guide based in the United States, I specialize in crafting immersive experiences that showcase the diverse landscapes, cultures, and cuisines of America. Fluent in both English and Spanish, I aim to provide memorable adventures for travelers."
 
+        , "reviewData": [
+            {
+                "reviewId": 1,
+                "reviewerName": "Ravi",
+                "timeReviewWasAdded": 3,
+                "stars": 3,
+                "reviewContent": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+            }, {
+                "reviewId": 2,
+                "reviewerName": "Xavier",
+                "timeReviewWasAdded": 1,
+                "stars": 2,
+                "reviewContent": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+            }, {
+                "reviewId": 3,
+                "reviewerName": "Stacee",
+                "timeReviewWasAdded": 1,
+                "stars": 5,
+                "reviewContent": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+            }
+        ]
     }, {
         "id": 5,
         "img": "https://images.pexels.com/photos/10589080/pexels-photo-10589080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -62,6 +146,27 @@ const data = [
         "reviews": 32,
         "aboutMe": "I am passionate about sharing Canada's rich cultural heritage with visitors from around the world. With fluency in English and French, I offer engaging tours that explore the history, architecture, and natural beauty of Canada."
 
+        , "reviewData": [
+            {
+                "reviewId": 1,
+                "reviewerName": "Ravi",
+                "timeReviewWasAdded": 3,
+                "stars": 3,
+                "reviewContent": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+            }, {
+                "reviewId": 2,
+                "reviewerName": "Xavier",
+                "timeReviewWasAdded": 1,
+                "stars": 2,
+                "reviewContent": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+            }, {
+                "reviewId": 3,
+                "reviewerName": "Stacee",
+                "timeReviewWasAdded": 1,
+                "stars": 5,
+                "reviewContent": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+            }
+        ]
     }, {
         "id": 6,
         "img": "https://images.pexels.com/photos/3760954/pexels-photo-3760954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -75,6 +180,27 @@ const data = [
         "reviews": 59,
         "aboutMe": "As a seasoned tour guide based in the United States, I specialize in crafting immersive experiences that showcase the diverse landscapes, cultures, and cuisines of America. Fluent in both English and Spanish, I aim to provide memorable adventures for travelers."
 
+        , "reviewData": [
+            {
+                "reviewId": 1,
+                "reviewerName": "Ravi",
+                "timeReviewWasAdded": 3,
+                "stars": 3,
+                "reviewContent": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+            }, {
+                "reviewId": 2,
+                "reviewerName": "Xavier",
+                "timeReviewWasAdded": 1,
+                "stars": 2,
+                "reviewContent": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+            }, {
+                "reviewId": 3,
+                "reviewerName": "Stacee",
+                "timeReviewWasAdded": 1,
+                "stars": 5,
+                "reviewContent": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+            }
+        ]
     }, {
         "id": 7,
         "img": "https://images.pexels.com/photos/936092/pexels-photo-936092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -88,6 +214,27 @@ const data = [
         "reviews": 95,
         "aboutMe": "I am passionate about sharing Canada's rich cultural heritage with visitors from around the world. With fluency in English and French, I offer engaging tours that explore the history, architecture, and natural beauty of Canada."
 
+        , "reviewData": [
+            {
+                "reviewId": 1,
+                "reviewerName": "Ravi",
+                "timeReviewWasAdded": 3,
+                "stars": 3,
+                "reviewContent": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+            }, {
+                "reviewId": 2,
+                "reviewerName": "Xavier",
+                "timeReviewWasAdded": 1,
+                "stars": 2,
+                "reviewContent": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+            }, {
+                "reviewId": 3,
+                "reviewerName": "Stacee",
+                "timeReviewWasAdded": 1,
+                "stars": 5,
+                "reviewContent": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+            }
+        ]
     }, {
         "id": 8,
         "img": "http://dummyimage.com/100x100.png/dddddd/000000",
@@ -98,9 +245,30 @@ const data = [
         "tourDuration": 21,
         "ratings": 4.84,
         "lang": "man",
-        "reviews": 9.,
+        "reviews": 90,
         "aboutMe": "As a seasoned tour guide based in the United States, I specialize in crafting immersive experiences that showcase the diverse landscapes, cultures, and cuisines of America. Fluent in both English and Spanish, I aim to provide memorable adventures for travelers."
 
+        , "reviewData": [
+            {
+                "reviewId": 1,
+                "reviewerName": "Ravi",
+                "timeReviewWasAdded": 3,
+                "stars": 3,
+                "reviewContent": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+            }, {
+                "reviewId": 2,
+                "reviewerName": "Xavier",
+                "timeReviewWasAdded": 1,
+                "stars": 2,
+                "reviewContent": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+            }, {
+                "reviewId": 3,
+                "reviewerName": "Stacee",
+                "timeReviewWasAdded": 1,
+                "stars": 5,
+                "reviewContent": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+            }
+        ]
     }, {
         "id": 9,
         "img": "http://dummyimage.com/100x100.png/cc0000/ffffff",
@@ -114,6 +282,27 @@ const data = [
         "reviews": 48,
         "aboutMe": "I am passionate about sharing Canada's rich cultural heritage with visitors from around the world. With fluency in English and French, I offer engaging tours that explore the history, architecture, and natural beauty of Canada."
 
+        , "reviewData": [
+            {
+                "reviewId": 1,
+                "reviewerName": "Ravi",
+                "timeReviewWasAdded": 3,
+                "stars": 3,
+                "reviewContent": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+            }, {
+                "reviewId": 2,
+                "reviewerName": "Xavier",
+                "timeReviewWasAdded": 1,
+                "stars": 2,
+                "reviewContent": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+            }, {
+                "reviewId": 3,
+                "reviewerName": "Stacee",
+                "timeReviewWasAdded": 1,
+                "stars": 5,
+                "reviewContent": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+            }
+        ]
     }, {
         "id": 10,
         "img": "http://dummyimage.com/100x100.png/dddddd/000000",
@@ -125,9 +314,33 @@ const data = [
         "ratings": 4.22,
         "lang": "man",
         "reviews": 27,
-        "aboutMe": "As a seasoned tour guide based in the United States, I specialize in crafting immersive experiences that showcase the diverse landscapes, cultures, and cuisines of America. Fluent in both English and Spanish, I aim to provide memorable adventures for travelers."
+        "aboutMe": "As a seasoned tour guide based in the United States, I specialize in crafting immersive experiences that showcase the diverse landscapes, cultures, and cuisines of America. Fluent in both English and Spanish, I aim to provide memorable adventures for travelers.",
+        "reviewData": [
+            {
+                "reviewId": 1,
+                "reviewerName": "Ravi",
+                "timeReviewWasAdded": 3,
+                "stars": 3,
+                "reviewContent": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+            }, {
+                "reviewId": 2,
+                "reviewerName": "Xavier",
+                "timeReviewWasAdded": 1,
+                "stars": 2,
+                "reviewContent": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+            }, {
+                "reviewId": 3,
+                "reviewerName": "Stacee",
+                "timeReviewWasAdded": 1,
+                "stars": 5,
+                "reviewContent": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+            }
+        ]
 
     }
 ]
 
 export default data;
+
+
+

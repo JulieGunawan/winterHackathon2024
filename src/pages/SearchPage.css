@@ -1,56 +1,85 @@
 /* Driver Card Component Stylings */
 
 * {
-    /* outline: 1px solid red; */
+  /* outline: 1px solid red; */
+}
+
+.driver-card {
+    border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    padding: 1rem;
 }
 
 .dropdown-component {
-    display: flex;
-    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
 }
 
 .driver-card-container {
-    display: grid;
-    row-gap: 0.75rem;
+  display: grid;
+  row-gap: 0.75rem;
+  width: 90%;
+  margin: auto;
 }
 
 .image-name-container {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 
 .image-container {
-    margin-right: 0.5rem;
-    margin-bottom: s 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: s 0.5rem;
+  /* border-radius: 50%; */
 }
 
 .name-container {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  text-align: center;
 }
 
 .side-container {
-    display: grid;
-    align-content: center;
+  display: grid;
+  align-content: center;
 }
 
+.tag-containers {
+  display: flex;
+}
 .bookmark-tag {
-    font-size: 1.5rem;
-    justify-self: flex-end;
+  font-size: 1.5rem;
+  margin-left: auto;
+  /* justify-self: flex-end; */
 }
 
 .heart-icon {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .cost-rating-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .price,
 .ratings {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ratings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.list-item {
+  list-style-type: none;
 }
